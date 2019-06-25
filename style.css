@@ -1,0 +1,48 @@
+.hero--background-image {
+  background-image:url(design-assets 2/hero.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+  position:relative;
+  width: auto;
+}
+.hero--action-bar {
+  background: rgba(0, 0, 0, .4);
+  bottom: 0;
+  color:white;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.hero--action-bar .row {
+  /* FLEX BOX: center vertically, justify columns to left and right of row
+  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  */
+  align-items: center;
+}
+
+.zipcode-column--form {
+  text-align: right;
+}
+.zipcode-column i {
+  color: #8fc740;
+}
+.form-zipcode i {
+  color: white;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+.form-zipcode input {
+  display: inline-block !important;
+  max-width: 240px;
+}
+.form-zipcode button {
+  margin-left: 5px;
+}
+.nav-img {
+  max-width: 200px
+}
+.tel-link {
+  color: #FFFFFF;
+}
