@@ -39,7 +39,7 @@
 
 <!--Uhaul city picture -->
 
-<div class="uhaul-background-image">
+<div class="hero-background-image">
 
 <!-- Action Bar -->
 
@@ -75,7 +75,7 @@
       <h2>
         Tampa Bay Area Junk Removal
       </h2>
-      <p>
+      <p class="w-50">
         Whether it's residential or commercial, we're happy to remove your trash so you don't have to!
       </p>
       <button type="button" class="btn btn-dark btn-lg">
@@ -84,9 +84,6 @@
       <button type="button" class="btn btn-link btn-link-dark">
         Items We Remove
       </button>
-       <div class="col-md-5">
-         <img src="/Users/adreaaraoz/Sites/uhaul/design-assets 2/junk.jpg" class="junk-image img-fluid mx-auto"width="500" height="500">
-       </div>
     </div>
   </div>
 </div>
@@ -112,7 +109,8 @@
               We'll beat any written junk removal estimate.
             </p>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">Request a Quote</button>
+          <button id="btn-btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#leadModal">Request a quot
+          </button>
         </div>
       </div>
   </div>
@@ -206,7 +204,7 @@
         </div>
 
         <div class="text-center my-4">
-          <button type="button" class="btn btn-primary btn-lg">Request a Quote</button>
+
         </div>
       </div>
     </div>
@@ -223,7 +221,9 @@
         <p class="">
           Our hassle free services allow you to go about your life, well we do the heavy lifting for you. New customers get $35 off
       </p>
-        <button type="button" class="btn btn-primary btn-lg">Book Now</button>
+
+      <button id="btn-btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#leadModal">Book Now
+      </button>
       </div>
         <div class="col md-5">
           <img src="design-assets 2/beach.jpg" class="beach-image img-fluid mx-auto" width="500" height="500">
@@ -283,11 +283,11 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="leadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="leadModal" tabindex="-1" role="dialog" aria-labelledby="leadModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="leadtitle">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -325,7 +325,7 @@
               </select>
             </div>
           <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
+            <label for="inputZip">Zipcode</label>
               <input type="text" class="form-control" id="inputZip">
             </div>
           </div>
@@ -348,11 +348,46 @@
       </div>
     </div>
 
+    <div class="modal fade" id="smallmodal" tabindex="-1" role="dialog" aria-labelledby="leadModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="smallmodaltittle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="smallForm" name="smallForm">
+            </div>
+              <div class="form-group">
+                <label for ="inputEmail"><Email></label>
+                <input type="email" class="form-control" id="smallEmail" name="quote_email" placeholder="email@website.com">
+          </div
+          <div class="form-group">
+                <label for ="inputZipcode"><ZipCode</label>
+                <input type="text" class="form-control" id="smallZip" name="quote_zip" placeholder="12345">
+          </div
+          <div class="form-group">
+                <label for ="inputphonenumber"><Phone Number></label>
+                <input type="text" class="form-control" id="smallPhone" name="quote_phone" placeholder="(123)564-7867">
+          </div
+          <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" datadismiss="modal" id="quote_submit" form="smallForm"><Submit></button>
+            </div>
+          </div
+        </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <scrip src="script.js"></script>
+    <script type="jquery.serializeObject.js"></script>
+
   </body>
 </html>
