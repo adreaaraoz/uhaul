@@ -46,3 +46,8 @@
 .tel-link {
   color: #FFFFFF;
 }
+@media (min-width: 992px) {
+  .d-lg-block {
+    display: block !important;
+  }
+}
